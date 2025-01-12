@@ -1,0 +1,32 @@
+label{
+    cursor: pointer;
+}
+.show-hide{
+    display: flex;
+    gap: 10px;
+}
+.show-hide .icon-caret-right{
+    font-weight: bold;
+    transform: rotate(90deg);
+
+}
+.toggle {
+    display: none;
+}
+.toggle ~ span , div span{
+    color: red;
+}
+
+/* show or hide */
+.toggle:checked ~ span {
+    display: none;
+}
+
+.toggle:checked ~  div span {
+    display: none;
+}
+
+/* rotate caret */
+.toggle:checked ~ label .show-hide .icon-caret-right{
+    transform: rotate(0deg);
+}
