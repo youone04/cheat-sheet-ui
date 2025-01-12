@@ -1,0 +1,23 @@
+.container{
+    position: relative;
+    display: flex;
+    justify-content: centers;
+}
+.section-1{
+    background: lightblue; height: 200px; position: relative; z-index: 1;
+    flex: 1;
+}
+.section-2 {
+    background: lightcoral;
+    width: 50%;
+    height: 200px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
