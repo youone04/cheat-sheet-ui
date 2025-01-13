@@ -1,0 +1,34 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Konten halaman */
+  .content {
+    padding: 20px;
+    height: 200vh; /* Membuat halaman lebih panjang untuk scroll */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Kontainer progress bar */
+  .progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #f3f3f3;
+    z-index: 1000;
+  }
+  
+  /* Progress bar */
+  .progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.2s ease;
+  }
+  
