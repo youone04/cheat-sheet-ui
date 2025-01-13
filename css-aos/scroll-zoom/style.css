@@ -1,0 +1,41 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    height: 200vh; /* Membuat halaman lebih panjang untuk scrolling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .zoom-element {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    transform: scale(0.5); /* Awal kecil */
+    opacity: 0; /* Awal transparan */
+    transition: transform 0.6s ease, opacity 0.6s ease;
+  }
+  
+  .zoom-element.visible {
+    transform: scale(1); /* Zoom ke ukuran penuh */
+    opacity: 1; /* Tampak penuh */
+  }
+  
+  .content {
+    position: absolute;
+    top: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
