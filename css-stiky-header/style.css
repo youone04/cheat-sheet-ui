@@ -1,0 +1,42 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky; /* Makes the header sticky */
+    top: 0;           /* Sticks at the top of the viewport */
+    z-index: 1000;    /* Ensures it's above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Section styles */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin: 50px 0;
+    padding: 0px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Sticky titles inside each section */
+  .section-title {
+    position: sticky;
+    top: 40px; /* Offset to account for the header */
+    background: #f4f4f4;
+    padding: 5px;
+    margin: 0;
+    z-index: 999;
+    border-bottom: 2px solid #ddd;
+  }
+  
